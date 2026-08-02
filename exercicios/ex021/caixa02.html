@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: gray;
+            margin: 0px;
+        }
+        
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: rgba(128, 128, 128, 0.753);
+            padding: 3px;
+            box-shadow: 1.5px 1.5px 4px rgba(85, 85, 85, 0.815); /*Sombra do menu de navegação*/
+            border-radius: 3px 5px; /*Arrendodamento da borda*/
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin: 0px 30px 0px 0px;
+
+        }
+        nav >a:hover {
+            text-decoration: underline;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+
+        }
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: rgba(211, 211, 211, 0.76);
+            margin: 0px;
+        } 
+
+        aside {
+            background-color: rgb(143, 142, 142);
+            padding: 5px 0px 5px 5px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 2px;
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>link link link link...</nav>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <h2>Título</h2>
+                <p>Texto do artigo</p>
+            </article>
+
+            <article>
+                <h2>Título</h2>
+                <p>Texto do artigo</p>
+
+                <aside>
+                conteúdo periférico do artigo
+                </aside>
+
+            </article>
+        </section>
+        <aside>
+        conteúdo periférico do site
+        </aside>
+    </main>
+    <footer>
+    conteúdo do rodapé
+    </footer>    
+</body>
+</html>
