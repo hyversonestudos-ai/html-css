@@ -1,0 +1,108 @@
+@charset "UFT-08";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-size: 1em;
+}
+
+html, body {
+    font-family: var(--fonte1);
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header >h1 {
+    font-family: var(--fonte2);
+    font-size: 10vw;
+    padding-top: 50px;
+    /*                          ANOTAÇÕES PARA FAZER NO CADERNO ONLINE DO WORLD */
+    /* text-transform: uppercase;  *//* COLOCA TODO O TEXTO EM CAIXA ALTA - MAIUSCULA */
+    font-variant: small-caps; /* DEIXA TODAS AS LETRAS MAIUSCULA, POREM AS PRIMEIRAS LETRAS DE CADA TEXTO FICAM UM POUCO MAIOR QUE AS DEMIAS, DEIXANDO UM CONTRASTE DAS LETRAS */
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+header a, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em; /* É o espçamento entre uma linha e a outra, para isso, existem os parametros */
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.image {
+    background-color: rgb(58, 56, 56);
+    color: white;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.534);
+
+    background-attachment: fixed;
+}
+
+section.image >p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.349);
+    text-shadow: 1px 1px 5px rgb(18, 18, 19);
+
+}
+
+section#img {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+section#img-02 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+
+}
+
+
