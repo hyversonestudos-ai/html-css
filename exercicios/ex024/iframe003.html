@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 99vw;
+            height: 400px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam fuga dolores nesciunt, libero dignissimos aut officia ab cumque animi sed ratione optio? Magni totam quas, quibusdam minima labore amet similique? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, quae rerum. Explicabo neque minima ea nam! Distinctio eius quidem nulla soluta delectus, id doloremque quibusdam eum ad, earum dolor ipsam.</p>
+
+    <ul>
+        <li><a href="paginasextras/pagina001.html" target="iframeteste">Primeira Página</a></li>
+        <li><a href="paginasextras/index3.html" target="iframeteste">Segunda Página</a></li>
+        <li><a href="paginasextras/index4.html" target="iframeteste">Terceira Página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero consequuntur, iste possimus ab quidem ex harum corrupti voluptatum nihil doloremque, architecto, sunt eaque aliquid numquam aut est temporibus error quasi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima ipsam maxime labore. Optio velit assumenda totam, ipsum perspiciatis expedita? Accusamus voluptatibus qui soluta perspiciatis quae repellat debitis excepturi sit quidem. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa incidunt esse quod placeat nemo maiores. Laudantium ipsam voluptatibus sequi inventore. Quia quam porro fugiat, itaque aspernatur quis molestias dicta cumque.</p>
+
+    <iframe id="tela" name="iframeteste" srcdoc="<h1>Escolha uma das opções acima</h1>
+    <p>A utilização do srcdoc faz com que possamso colocar o nosso codigo HMTL dentro de um iframe, nesse exemplo ao abrir a pagina, os dados que vão estar sendo apresentando dentro do iframe serão o conteúdo do nosso codigo HTML e ao selecionar uma das opções acima, o conteúdo HTML será substituido pelo conteúdo da opção escolhida.</p>" >O navegador não é compatível com iframe</iframe>
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, distinctio quas! Sunt facere totam in, rem numquam repellat nam veniam? Incidunt sunt libero officiis dolorem pariatur nemo porro tenetur in! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum id laudantium perspiciatis molestias odio similique vitae facere deserunt itaque, temporibus deleniti amet et quae alias eos dolorem, sunt, cupiditate repellat.</p>
+</body>
+</html>

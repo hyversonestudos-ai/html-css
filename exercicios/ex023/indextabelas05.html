@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de Täbela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 400px;
+            border-collapse: collapse;
+        }
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 5px;
+        }
+
+        th, td, caption{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        .namestar {
+            background-color: yellow;
+        }
+        .cnome {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <table>
+    <colgroup>
+        <col class="cnome">
+        <col class="csexo">
+        <col class="cidade">
+        <col class="cprofissão">
+    </colgroup>
+    <caption>Cadastro</caption>
+    <tbody>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr class="namestar">
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Queiroz</td>
+            <td>M</td>
+            <td>26</td>
+            <td>Químico(a)</td>
+        </tr>
+        <tr>
+            <td>Quitéria</td>
+            <td>F</td>
+            <td>27</td>
+            <td>Web Designer</td>
+        </tr>
+        <tr>
+            <td>Wendel</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Engenheiro(a)</td>
+        </tr>
+        <tr>
+            <td>Wanessa</td>
+            <td>F</td>
+            <td>29</td>
+            <td>Radialista</td>
+        </tr>
+        <tr>
+            <td>Elizeu</td>
+            <td>M</td>
+            <td>30</td>
+            <td>Técnico(a) em Informática</td>
+        </tr>
+
+    </tbody>
+    </table>
+    
+</body>
+</html>
