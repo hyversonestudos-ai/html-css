@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output 2</title>
+</head>
+<body>
+    <h1>Exemplos de Formulários</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="idnumero">Número: </label>
+            <input type="range" name="numero" id="idnumero" min="0" max="10" value="5" oninput="ivalor.innerHTML = Number (idnumero.value)">
+            <output id="ivalor">0</output>
+        </p>
+
+
+
+        <p>
+            <input type="submit" value="Enviar Dados">
+            <input type="reset" value="Limpar Dados">
+        </p>
+    </form>
+</body>
+</html>

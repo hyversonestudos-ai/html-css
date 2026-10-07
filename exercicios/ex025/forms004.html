@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Formulário</title>
+</head>
+<body>
+    <h1>Exemplos de Formulários com E-mail e Telefone</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="idemail">E-mail</label>
+            <input type="email" name="nemail" id="idemail" required placeholder="Digite seu E-mail" autocomplete="email">
+        </p>
+        <p>
+            <label for="idtelefone">Telefone</label>
+            <input type="tel" name="ntelefone" id="idtelefone" placeholder="Digite seu número" autocomplete="tel" required>
+        </p>
+        <p>
+            <input type="submit" value="Enviar Dados">
+            <input type="reset" value="Limpar Dados">
+        </p>
+    </form>
+<!-- Estudar sobre RegEx = Expressões regulares -->
+</body>
+</html>

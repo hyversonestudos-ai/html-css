@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output 3</title>
+</head> 
+<body>
+    <h1>Exemplos de Formulários</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="idano">Em que você nasceu</label>
+            <input type="number" name="nano" id="idano" min="1900" max="2026" placeholder="2000" oninput="calcIdade()" >
+        </p>
+        <p>
+            <label for="ididade">Sua idade é: </label>
+            <output id="ididade">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar Dados">
+            <input type="reset" value="Limpar Dados">
+        </p>
+    </form>
+
+
+    <script>
+        function calcIdade () {
+            let atual = new Date().getFullYear()
+            ididade.innerHTML = Number(atual) - Number(idano.value)
+        }
+    </script>
+</body>
+</html>

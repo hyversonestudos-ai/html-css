@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select, datalist e textarea</title>
+</head>
+<body>
+    <h1>Exemplos de Formulários</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="idestado">Estado</label>
+            <select name="Estado" id="idestado">
+                <option value="" selected>---- Escolha ----</option>
+            <optgroup label="Região Norte">
+                <option value="AC">Acre</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="PA">Pará</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="TO">Tocantins</option>
+            </optgroup>
+            <optgroup  label="Região Nordeste">
+                <option value="AL">Alagoas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="MA">Maranhão</option>
+                <option value="PB">Paraíba</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="SE">Sergipe</option>
+            </optgroup>
+            <optgroup  label="Região Centro-Oeste">
+                <option value="DF">Distrito Federal</option>
+                <option value="GO">Goiás</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+            </optgroup>
+            <optgroup  label="Região Sudeste">
+                <option value="ES">Espírito Santo</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São Paulo</option>
+            </optgroup>        
+            <optgroup  label="Região Sul">
+                <option value="PR">Paraná</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="SC">Santa Catarina</option>
+            </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="idprofissao">Profissão</label>
+            <input type="text" name="nprofissao" id="idprofissao" list="listprofissao">
+            <datalist id="listprofissao">
+                <option value="Tecnologia">Desenvolvedor de Software</option>
+                <option value="Dados">Analista de Dados / Cientista de Dados</option>
+                <option value="Inteligência Artificial">Engenheiro de IA</option>
+                <option value="Tecnologia">Especialista em Cibersegurança</option>
+                <option value="Dados/TI">Engenheiro de Dados</option>
+                <option value="Saúde">Médico</option>
+                <option value="Saúde">Enfermeiro / Técnico de Enfermagem</option>
+                <option value="Tecnologia">Engenheiro de Software</option>
+                <option value="Tecnologia">Especialista em Cloud/Computação em Nuvem</option>
+                <option value="Gestão">Administrador / Gestor</option>
+                <option value="Finanças">Analista Financeiro / Planejador Financeiro</option>
+                <option value="Engenharia/Indústria">Engenheiro de Produção</option>
+                <option value="Engenharia/Indústria">Engenheiro de Segurança de Processo</option>
+                <option value="Logística">Profissional de Logística / Supply Chain</option>
+                <option value="Marketing">Profissional de Marketing Digital</option>
+                <option value="RH">Especialista em Recursos Humanos/Recrutamento</option>
+                <option value="Finanças">Contador / Analista Contábil</option>
+                <option value="Agronegócio">Engenheiro Agrônomo / Cientista Agrário</option>
+                <option value="Gestão">Profissional de Gestão de Projetos</option>
+                <option value="Energia/Engenharia">Especialista em Energia</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="idmensagem">Mensagem</label> <br>
+            <textarea name="nmensagem" id="idmensagem" cols="60" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar Dados">
+            <input type="reset" value="Limpar Dados">
+        </p>
+    </form>
+    
+</body>
+</html>

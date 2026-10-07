@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de login HTML e CSS</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="estilos/wolfloginstyle.css">
+    <link rel="stylesheet" href="estilos/mdiaqueriwolfloginstyle.css">
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="image">
+
+            </div>
+            <div id="formss">
+                <h1>Painel do Usuário</h1>
+                <p>• Seja bem-vindo(a) à Corporate Bridge. Acesse sua conta para explorar todas as possibilidades que a Bridge oferece!</p>
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="email" name="nemail" id="idemail" required placeholder="Digite seu e-mail" autocomplete="email" >
+                            <label for="idemail">Usuário</label> <br>
+                    </div>
+
+                    <div class="campo">
+                        <span class="material-symbols-outlined">lock</span>
+                        <input type="password" name="npassword" id="idpassword" required placeholder="Digite sua senha" minlength="6" maxlength="20">
+                            <label for="idpassword">Senha</label> <br>
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="#" class="button">Esqueci a senha.<span class="material-symbols-outlined">forward_to_inbox</span></a>
+                
+
+                </form>
+            </div>
+
+        </section>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color, range e file</title>
+</head>
+<body>
+    <h1>Exemplos de Formulários</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="idcor">Cor</label>
+            <input type="color" name="cor" id="idcor" value="#ffffff">
+        </p>
+        <p>
+            <label for="idrange"></label>
+            <input type="range" name="range" id="idrange" value="1" min="1" max="5">
+        </p>
+        <p>
+            <label for="idfiles"></label>
+            <input type="file" name="nfiles" id="idfiles">
+        </p>
+        <p>
+            <input type="submit" value="Enviar Dados">
+            <input type="reset" value="Limpar Dados">
+        </p>
+    </form>
+    
+</body>
+</html>
